@@ -63,7 +63,7 @@ public class JogoForca {
             if(Arrays.equals(letrasReveladas, letrasEscondidas)) ganhou = true;
 
             // Reduz nro de chances se letra digitada nao existir.
-            if (letraEncontrada) {
+            if (!letraEncontrada) {
                 chancesRestantes--;
             }
         }
