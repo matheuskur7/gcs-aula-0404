@@ -55,7 +55,7 @@ public class JogoForca {
             boolean letraEncontrada = false;
             for (int i = 0; i < tamPalavraSorteada; i++) {
                 if (letrasEscondidas[i] == letraDigitada) {
-                    letraEncontrada = true;
+                    letraEncontrada = letrasReveladas[i] != letrasEscondidas[i];
                     letrasReveladas[i] = letrasEscondidas[i];
                 }
             }
