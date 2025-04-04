@@ -1,3 +1,6 @@
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -31,9 +34,10 @@ public class JogoForca {
             letrasReveladas[i] = '?';
         }
 
+        boolean ganhou = false;
 
         // Loop do jogo
-        while (chancesRestantes > 0) {
+        while (chancesRestantes > 0 && !ganhou) {
             System.out.println("\nChances restantes: " + chancesRestantes);
 
             // Mostra letras ja reveladas
@@ -56,6 +60,8 @@ public class JogoForca {
                 }
             }
 
+            if(Arrays.equals(letrasReveladas, letrasEscondidas)) ganhou = true;
+
             // Reduz nro de chances se letra digitada nao existir.
             if (letraEncontrada) {
                 chancesRestantes--;
@@ -63,7 +69,7 @@ public class JogoForca {
         }
 
         System.out.println("===========");
-        System.out.println(" Game Over ");
+        System.out.println(ganhou ? "Parabéns! ": " Game Over ");
         System.out.println("===========");
 
     }
