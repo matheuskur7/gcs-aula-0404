@@ -14,6 +14,12 @@ public class JogoForca {
 
         // Configurar jogo
         String[] bancoPalavras = {
+                "SPOCK",
+                "ENTERPRISE",
+                "VOYAGER",
+                "WORTH",
+                "DIANNA",
+                "DATA",
                 "ABACATE",
                 "MANGA",
                 "MELANCIA",
@@ -77,7 +83,6 @@ public class JogoForca {
         System.out.println("===========");
 
     }
-
 
 
 }
