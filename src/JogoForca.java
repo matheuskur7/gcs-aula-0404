@@ -20,6 +20,13 @@ public class JogoForca {
                 "JABUTICABA",
                 "BANANA",
                 "PESSEGO",
+                "CHEWBACCA",
+                "R2D2",
+                "LUKE",
+                "LEIA",
+                "OBIWAN",
+                "ALDERAAN",
+                "JAKKU",
         };
 
         Random random = new Random();
